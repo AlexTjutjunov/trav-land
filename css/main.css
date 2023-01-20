@@ -1,0 +1,252 @@
+/* section location */
+.location {
+    padding: 140px 0;
+}
+
+.location-subtitile {
+    width: 735px;
+    margin: 0 auto;
+}
+
+.location-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-block {
+    width: 360px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.location-block:hover {
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.403);
+    transform: scale(1.1);
+}
+
+.location-block:first-child .location-block-text {
+    padding: 0 27px 33px 27px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.location-block:nth-child(2) .location-block-text {
+    padding: 0 34px 33px 37px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.location-block:last-child .location-block-text {
+    padding: 0 13px 33px 13px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.location-block-title {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 35px 0 10px 0;
+}
+
+/* end section location */
+
+/* section slider */
+.sliders {
+    display: flex;
+}
+
+.slider-subtitle {
+    max-width: 656px;
+    margin: 0 auto 60px auto;
+}
+
+.sliders__block-wrapp {
+    width: 262px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sliders__block-wrapp:hover {
+    opacity: 0.5;
+}
+
+.sliders__block-title {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 20px 0 8px 0;
+}
+
+.sliders__block-loc {
+    padding-left: 21px;
+    color: #000000;
+    opacity: 0.6;
+    position: relative;
+}
+
+.sliders__block-loc::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 11px;
+    height: 16px;
+    background: url(../img/loc.svg) no-repeat center;
+    transform: translateY(-50%);
+}
+
+.sliders__block-star {
+    padding-left: 34px;
+    background: url(../img/Star.svg) no-repeat left center;
+    margin-left: 50px;
+}
+
+.sliders__block-booking {
+    margin: 8px 0 8px 0;
+    color: #00000060;
+}
+
+.sliders__block-price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.sliders__block-price span {
+    color: #00000060;
+    font-style: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.btn-slider {
+    position: absolute;
+    z-index: 10;
+}
+
+.btn-slick-prev {
+    bottom: -55px;
+    left: 29%;
+
+}
+
+.btn-slick-next {
+    bottom: -55px;
+    right: 29%;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: -53px;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    background: rgba(201, 69, 59, 0.1);
+    border-radius: 10px;
+    width: 75px;
+    height: 5px;
+    font-size: 0;
+    line-height: 0;
+    transition: 0.4s;
+}
+
+.slick-dots li.slick-active {
+    background: #C9453B;
+    border-radius: 10px;
+}
+
+.slick-dots li:not(:last-child) {
+    margin-right: 5px;
+}
+
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    border: none;
+}
+
+/* section news */
+
+.news {
+    padding: 140px 0 142px 0;
+}
+
+.news-subtitle {
+    width: 581px;
+    margin: 0 auto 56px auto;
+}
+
+.news__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__left {
+    width: 554px;
+}
+
+.news__left-title {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: 35px 0 10px 0;
+}
+
+.news__left-text {
+    color: #00000060;
+    margin-bottom: 10px;
+}
+
+.news__left-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.news__right {
+    width: 539px;
+}
+
+.news__wright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__wright-wrapper:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.news__right-img {
+    width: 263px;
+}
+
+.news__right-content {
+    width: 247px;
+}
+
+.news__right-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.news__right-text {
+    color: #00000060;
+    margin: 10px 0 8px 0;
+}
+
+.news__right-link {
+    color: #00000080;
+    font-size: 20px;
+    line-height: 30px;
+}

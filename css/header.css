@@ -1,0 +1,117 @@
+.header-top {
+    display: flex;
+    /* df - выровняет дочерние элементы по x oci */
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header-logo {
+    font-family: 'Ribeye';
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list+.menu-list {
+    margin-left: 50px;
+}
+
+.menu-link {}
+
+.mobile-menu {
+    display: none;
+    position: relative;
+    z-index: 4;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mobile-menu span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #C9453B;
+    transition: all 0.4s ease-in-out;
+}
+
+.mobile-menu span:last-child {
+    bottom: 0;
+}
+
+.mobile-menu span:last-child.active,
+.mobile-menu span:first-child.active{
+    opacity: 0;
+}
+
+.mobile-menu span:nth-child(2),
+.mobile-menu span:nth-child(3) {
+    top: 50%;
+}
+
+.mobile-menu span:nth-child(2).active {
+    transform: rotate(45deg);
+}
+.mobile-menu span:nth-child(3).active {
+    transform: rotate(-45deg);
+}
+
+.header-btn,
+.mobile-btn {
+    display: block;
+    width: 163px;
+    padding: 14px 0 13px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mobile-btn{
+    display: none;
+}
+
+.header-btn:hover {
+    opacity: 0.8;
+}
+
+.header-bottom {
+    margin-top: 200px;
+}
+
+.header-bottom-title {
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    color: #FFFFFF;
+    width: 804px;
+}
+
+.header-bottom-text {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    width: 458px;
+    margin: 30px 0 40px 0;
+}
+
+.header-bottom-link {
+    display: block;
+    width: 187px;
+    text-align: center;
+    padding: 18px 0 17px 0;
+    transition: all 0.3s ease;
+}
+
+.header-bottom-link:hover {
+    opacity: 0.8;
+}

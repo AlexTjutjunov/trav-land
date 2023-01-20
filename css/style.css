@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    /*outline - чтоб при клике ничего не работало*/
+    background: transparent;
+    /*transparent - прозрачность*/
+    cursor: pointer;
+}
+
+.bg-orange {
+    background: #C9453B;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.ff-gelassio {
+    font-family: 'Gelasio';
+    font-weight: 500;
+}
+
+.inner-title {
+    font-size: 43px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inner-subtitle {
+    text-align: center;
+    opacity: 0.6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: black;
+}
+
+.overlay {
+    overflow-y: hidden;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.3) url(../img/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 35px 0 244px 0;
+}
+
+.container {
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
+.footer {
+    background: #e5e5e5;
+    padding: 70px 0 78px 0;
+}
+
